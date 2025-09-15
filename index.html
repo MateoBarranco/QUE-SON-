@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFI Architects - Estudio de Arquitectura</title>
+    <meta name="description" content="Estudio de arquitectura internacional especializado en diseño residencial, comercial y reformas.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">MFI Architects</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre Nosotras</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portafolio</a></li>
+                    <li class="nav__item"><a href="#calculator" class="nav__link">Calculadora</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="nav__language">
+                <select id="language-selector" onchange="changeLanguage()">
+                    <option value="es">ES</option>
+                    <option value="it">IT</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home__container">
+                <div class="home__data">
+                    <h1 class="home__title">Diseñamos Espacios,<br> Construimos Sueños.</h1>
+                    <p class="home__description">Arquitectura innovadora que fusiona estética y funcionalidad para crear proyectos únicos y atemporales.</p>
+                </div>
+            </div>
+            <div class="comparison-slider-container">
+                <div class="comparison-slider">
+                    <figure class="comparison-slider__figure">
+                        <img src="https://media.istockphoto.com/id/1318029933/es/foto/sala-de-estar-de-lujo-con-muebles-modernos.jpg?s=612x612&w=0&k=20&c=LQU8eJwvIMuP-Q2nIIBp-xcp3opnYq0uGNFrs-8JEjM=" alt="Antes">
+                        <figcaption class="comparison-slider__caption comparison-slider__caption--before">Antes</figcaption>
+                    </figure>
+                    <figure class="comparison-slider__figure comparison-slider__figure--right">
+                         <img src="https://media.istockphoto.com/id/1203531330/es/foto/interior-de-la-sala-de-estar-contempor%C3%A1nea-con-gran-ventanal-y-vistas-al-jard%C3%ADn-render-3d.jpg?s=612x612&w=0&k=20&c=q5V8lQ0rWjNGoJqWpD3b8S_Jq3ZgT4G-c5S5e_24_aA=" alt="Después">
+                        <figcaption class="comparison-slider__caption comparison-slider__caption--after">Después</figcaption>
+                    </figure>
+                    <div class="comparison-slider__divider">
+                        <div class="comparison-slider__handle"><i class="fas fa-arrows-alt-h"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section__title">Sobre Nosotras</h2>
+            <span class="section__subtitle">Conoce al equipo detrás de MFI Architects</span>
+            <div class="about__container container grid">
+                <div class="about__image">
+                     <img src="https://media.istockphoto.com/id/1368965646/es/foto/retrato-de-dos-j%C3%B3venes-arquitectas-que-trabajan-juntas-en-planos-en-una-oficina.jpg?s=612x612&w=0&k=20&c=Cj8w9bK1x_9c8F1DP9EDo8FzDF-5a_i5CGo-51o-yFA=" alt="Equipo de arquitectas">
+                </div>
+                <div class="about__data">
+                    <p>Somos un dúo de arquitectas apasionadas por el diseño y la innovación. Con experiencia internacional en Italia y Argentina, nuestra filosofía se basa en la colaboración estrecha con el cliente para materializar sus visiones, cuidando cada detalle desde el concepto inicial hasta la ejecución final.</p>
+                    <div class="about__team">
+                        <div class="team-member" onclick="toggleBio('member1')">
+                             <img src="https://media.istockphoto.com/id/1342229201/es/foto/mujer-joven-y-bonita-mirando-a-la-c%C3%A1mara.jpg?s=612x612&w=0&k=20&c=3TOCu282tl4i8l9i-nMeH5K9s4Xk7-sDa-45sfF26B4=" alt="Co-fundadora 1">
+                            <h3>Isabella Rossi</h3>
+                            <p>Co-Founder</p>
+                            <div class="bio" id="member1-bio">
+                                <p>Arquitecta especializada en diseño sostenible y urbanismo. Con más de 10 años de experiencia, Isabella lidera los proyectos con una visión innovadora y un profundo respeto por el entorno.</p>
+                            </div>
+                        </div>
+                        <div class="team-member" onclick="toggleBio('member2')">
+                             <img src="https://media.istockphoto.com/id/1398936930/es/foto/retrato-de-una-joven-empresaria-segura-de-s%C3%AD-misma.jpg?s=612x612&w=0&k=20&c=f-XctwBCKNUx1tS2EdAKQo2cFx4A-52p5gQ9DJT3y-E=" alt="Co-fundadora 2">
+                            <h3>Martina Fernández</h3>
+                            <p>Co-Founder</p>
+                            <div class="bio" id="member2-bio">
+                                <p>Experta en interiorismo y reformas de alta gama. Martina combina materiales y texturas para crear espacios que no solo son bellos, sino también funcionales y acogedores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portafolio de Proyectos</h2>
+            <span class="section__subtitle">Nuestro Trabajo Reciente</span>
+            
+            <div class="portfolio__filters container">
+                <span class="portfolio__filter-item active-filter" data-filter="all">Todos</span>
+                <span class="portfolio__filter-item" data-filter=".residential">Residencial</span>
+                <span class="portfolio__filter-item" data-filter=".commercial">Comercial</span>
+                <span class="portfolio__filter-item" data-filter=".interior">Interiorismo</span>
+            </div>
+
+            <div class="portfolio__container container grid">
+                <div class="portfolio__content mix residential">
+                    <a href="#"><img src="https://media.istockphoto.com/id/1283845973/es/foto/hermosa-casa-de-lujo.jpg?s=612x612&w=0&k=20&c=Jd8i_yPD-f_SExf_V-G3-5crn-s25fXm9yCXB-xl30k=" alt="Proyecto residencial" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Residencial / 2023</span>
+                        <h3 class="portfolio__title">Villa Modena</h3>
+                        <a href="#" class="portfolio__button">Ver Proyecto <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix commercial">
+                     <a href="#"><img src="https://media.istockphoto.com/id/1325308728/es/foto/exterior-de-un-edificio-moderno-de-oficinas.jpg?s=612x612&w=0&k=20&c=g-LyNL4jXC3l2oW950aStq7OOl-NqG-AaKCzD93yJI8=" alt="Proyecto comercial" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Comercial / 2024</span>
+                        <h3 class="portfolio__title">Oficinas Corp</h3>
+                        <a href="#" class="portfolio__button">Ver Proyecto <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix interior">
+                     <a href="#"><img src="https://media.istockphoto.com/id/1311984535/es/foto/interior-de-apartamento-moderno.jpg?s=612x612&w=0&k=20&c=3iysfr-IKDxC8_Q-MaGP0_gY1sKMqDEhMb4i-a2cx2w=" alt="Proyecto de interiorismo" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Interiorismo / 2023</span>
+                        <h3 class="portfolio__title">Loft Urbano</h3>
+                        <a href="#" class="portfolio__button">Ver Proyecto <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+             <div class="map__container container">
+                <h3 class="map__title">Nuestros Proyectos en el Mundo</h3>
+                 <img src="https://media.istockphoto.com/id/1154247514/es/vector/mapa-del-mundo-pol%C3%ADtico-vectorial-con-oc%C3%A9anos-y-continentes.jpg?s=612x612&w=0&k=20&c=vC5qXbI4G0lhMvGNBgwY6aY4d38N3je1aA-qM1m4oDk=" alt="Mapa del mundo" class="map__image">
+                </div>
+        </section>
+
+        <section class="calculator section" id="calculator">
+            <h2 class="section__title">Calcula tu Presupuesto</h2>
+            <span class="section__subtitle">Obtén una estimación para tu proyecto</span>
+            <div class="calculator__container container">
+                <form id="budget-form" class="calculator__form">
+                    <div class="form__step active">
+                        <label for="country">1. Elige tu país:</label>
+                        <select id="country" name="country">
+                            <option value="argentina">Argentina</option>
+                            <option value="italy">Italia</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form__step">
+                        <label for="property-type">2. Tipo de Construcción:</label>
+                        <select id="property-type" name="property-type">
+                            <option value="1">Vivienda Unifamiliar</option>
+                            <option value="1.2">Comercio / Local</option>
+                            <option value="0.8">Interiorismo / Reforma</option>
+                        </select>
+                        <label>Nivel de Acabados:</label>
+                        <div class="finishes">
+                            <label><input type="radio" name="finishes" value="1" checked> Standard</label>
+                            <label><input type="radio" name="finishes" value="1.1"> Medio</label>
+                            <label><input type="radio" name="finishes" value="1.2"> Luxury</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form__step">
+                        <label for="area">3. Superficie (m²):</label>
+                        <input type="number" id="area" placeholder="Ingresa los m²">
+                    </div>
+                    
+                    <div class="form__navigation">
+                        <button type="button" id="prevBtn" style="display:none;">Anterior</button>
+                        <button type="button" id="nextBtn">Siguiente</button>
+                    </div>
+
+                    <div id="result" class="calculator__result" style="display:none;">
+                        <h3>Resultado Estimado:</h3>
+                        <p id="estimated-cost"></p>
+                        <small>*Este valor es una estimación. No incluye tasas municipales ni IVA.</small>
+                        <div class="result__contact">
+                            <p>Para un presupuesto detallado, déjanos tu email:</p>
+                            <input type="email" placeholder="Tu correo electrónico" id="user-email" required>
+                            <button type="submit">Enviar Presupuesto Detallado</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contacto</h2>
+            <span class="section__subtitle">Hablemos de tu próximo proyecto</span>
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="fas fa-map-marker-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Ubicaciones</h3>
+                            <span class="contact__subtitle">Buenos Aires, Argentina<br>Milán, Italia</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="fas fa-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">contacto@mfiarchitects.com</span>
+                        </div>
+                    </div>
+                     <div class="contact__information">
+                        <i class="fab fa-whatsapp contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">WhatsApp</h3>
+                            <a href="https://wa.me/5491112345678" target="_blank" class="contact__subtitle">+54 9 11 1234 5678</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Nombre</label>
+                            <input type="text" id="name" class="contact__input">
+                        </div>
+                         <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" id="email" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Mensaje</label>
+                        <textarea name="" id="message" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="button button--flex">
+                            Enviar Mensaje
+                            <i class="fas fa-paper-plane button__icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">MFI Architects</h1>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer__social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span class="footer__copy">&#169; MFI Architects. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
